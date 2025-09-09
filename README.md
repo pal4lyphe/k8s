@@ -1,8 +1,22 @@
 ## Git Workflow
 
-Below is a visual guide to the basic Git workflow used in this project.  
+Below is a step-by-step table for the basic Git workflow used in this project.  
 Refer to it for branching, merging, and collaborating best practices.
 
-![Beginner Git Workflow](./beginner-git-workflow.png)
+| #  | Action                           | Command / GitHub Action                             | Description                                         | HEAD (local)              | origin (remote/GitHub)    | Which gets updated?    | Optional?                                  |
+|----|----------------------------------|-----------------------------------------------------|-----------------------------------------------------|---------------------------|---------------------------|-----------------------|--------------------------------------------|
+| 1  | Clone repo                       | git clone <repo-url>                                | Download repo from GitHub                           | main                      | main                      | Both                  | No                                         |
+| 2  | Check status                     | git status                                          | See what's changed                                  | current branch            | -                         | -                     | No                                         |
+| 3  | Stage changes                    | git add .                                           | Add all changes to staging                          | current branch (staged)   | -                         | HEAD (local)           | No                                         |
+| 4  | Commit changes                   | git commit -m "message"                             | Save changes with a message                         | current branch (commit)   | -                         | HEAD (local)           | No                                         |
+| 5  | Pull latest                      | git pull origin main                                | Get newest code from GitHub                         | main (updated)            | main                      | Both                  | No                                         |
+| 6  | Push changes                     | git push origin main                                | Upload commits to GitHub                            | main                      | main (updated)            | origin (remote)        | No                                         |
+| 7  | New feature branch               | git checkout -b feature-branch                      | Create and switch to new branch                     | feature-branch            | -                         | HEAD (local)           | No                                         |
+| 8  | Switch branches                  | git checkout main                                   | Switch back to main branch                          | main                      | -                         | HEAD (local)           | No                                         |
+| 9  | Push new branch                  | git push origin feature-branch                      | Upload feature branch to GitHub                     | feature-branch            | feature-branch (new)      | origin (remote)        | No                                         |
+| 10 | Merge feature into main (local)  | git checkout main; git merge feature-branch          | Copy changes from feature to main (locally)         | main (with merged commit) | -                         | HEAD (local)           | Yes                                        |
+| 11 | Push main after merge (local)    | git push origin main                                | Upload merged changes to GitHub main                | main                      | main (updated)            | origin (remote)        | Yes                                        |
+| 12 | Create a PR on GitHub (optional) | GitHub UI (“Compare & pull request”)                | Propose merging feature-branch into main            | -                         | PR created (no branch)    | origin (remote)        | Yes (alternative to 10/11)                 |
+| 13 | Merge a PR on GitHub (optional)  | GitHub UI (“Merge pull request”)                    | Apply feature-branch changes into origin/main       | -                         | main (updated)            | origin (remote)        | Yes (alternative to 10/11)                 |
 
-_For a step-by-step table and more info, see [docs/git-workflow.md](docs/git-workflow.md) (if available)._
+_For a visual diagram, see [beginner-git-workflow.png](./beginner-git-workflow.png)._
