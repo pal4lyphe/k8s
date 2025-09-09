@@ -18,5 +18,3 @@ Refer to it for branching, merging, and collaborating best practices.
 | 11 | Push main after merge (local)    | git push origin main                                | Upload merged changes to GitHub main                | main                      | main (updated)            | origin (remote)        | Yes                                        |
 | 12 | Create a PR on GitHub (optional) | GitHub UI (“Compare & pull request”)                | Propose merging feature-branch into main            | -                         | PR created (no branch)    | origin (remote)        | Yes (alternative to 10/11)                 |
 | 13 | Merge a PR on GitHub (optional)  | GitHub UI (“Merge pull request”)                    | Apply feature-branch changes into origin/main       | -                         | main (updated)            | origin (remote)        | Yes (alternative to 10/11)                 |
-
-_For a visual diagram, see [beginner-git-workflow.png](./beginner-git-workflow.png)._
