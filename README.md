@@ -24,6 +24,9 @@ Feel free to use this project to practice and experiment with Kubernetes!
 
 ## Git Workflow
 
+<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/7d8c1246-53f7-4e5a-bf3f-ba5696e60ad9" />
+
+
 Below is a step-by-step table for the basic Git workflow used in this project.  
 Refer to it for branching, merging, and collaborating best practices.
 
