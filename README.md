@@ -38,7 +38,7 @@ Feel free to use this project to practice and experiment with Kubernetes!
 | **6** | Stage changes | `git add .` | Tell Git which changes to save |
 | **7** | Save changes locally | `git commit -m "Add new feature"` | Create a snapshot of your changes |
 | **8** | Upload to GitHub | `git push origin feature/my-feature` | Share your work with others |
-| **9** | Create Pull Request | *(on GitHub website)* | Ask to merge your changes into main |
+| **9** | Create Pull Request | *(on GitHub website)* | Ask to merge your changes into main. If you're directly pushing from main on terminal to main on github, no pull request is created |
 | **10** | Merge after approval | *(on GitHub website)* | Your changes become part of the main code |
 | **11** | Switch back to main | `git checkout main` | Go back to the main branch |
 | **12** | Get merged changes | `git pull` | Update your local main with the new changes |
